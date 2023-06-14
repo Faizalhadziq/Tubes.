@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1b203d;
+  overflow: hidden;
+  font-family: system-ui;
+}
+
+.logo {
+  margin: 0px;
+  margin-left: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+.logo span {
+  color: #f7403b;
+}
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #272c4a;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #1b203d;
+}
+.sidenav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 300px;
+}
+.head {
+  padding: 20px;
+}
+.col-div-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-div-6 span {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav2 {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.table-data {
+  margin: auto;
+  max-width: 100%;
+  padding: 15px;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.table {
+  width: 90%;
+  font-size: 13px;
+  color: #444;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+
+table > thead {
+  background-color: #818181;
+  color: white;
+}
+
+table > thead td {
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+table th,
+table td {
+  border: 1px solid #00000017;
+  padding: 10px 15px;
+  color: white;
+}
+
+table > tbody > tr > td > img {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+
+tbody > tr > td > a {
+  text-decoration: none;
+  color: white;
+}

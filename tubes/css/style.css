@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 2000px;
+  background-color: #3f4e4f;
+}
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+
+/*Navbar*/
+
+.navbar {
+  padding: 10px 0 10px 0;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.navbar.scrolling-active {
+  background-color: #2c3639;
+  padding: 20px 0 20px 0;
+}
+
+.navbar .logo img {
+  width: 50px;
+}
+
+.navbar .box-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .box-navbar .menu {
+  display: flex;
+  column-gap: 50px;
+}
+
+.navbar .box-navbar .menu li {
+  list-style-type: none;
+}
+
+.navbar .box-navbar .menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px 10px 15px;
+}
+
+.navbar .box-navbar .menu .active a {
+  background-color: #3f4e4f;
+}
+
+.navbar .box-navbar .menu li a:hover {
+  background-color: #3f4e4f;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.menu-bar {
+  color: white;
+  font-size: 24px;
+  display: none;
+}
+
+.hero {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .content {
+  padding: 1.1rem 7%;
+  max-width: 50rem;
+  color: white;
+}
+
+/*profile*/
+.profile {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0 50px 0;
+}
+
+.profile .box-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 50px;
+}
+
+.profile .box-profile .box {
+  text-align: center;
+  color: white;
+  width: 300px;
+  font-weight: 100;
+}
+
+.profile .box-profile .box i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/*Walikota & Wakil*/
+
+.container-pemerintah {
+  background: #3f4e4f;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.pemerintah {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+}
+
+.card {
+  background: #3f4e4f;
+}
+
+.card img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card.wk {
+  margin-right: 10px;
+}
+
+.card.wwk {
+  margin-left: 10px;
+}
+
+.card-text {
+  display: block;
+  text-align: center;
+  background-color: #3f4e4f;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card-text h3 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #edf5e1;
+}
+
+.profil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profil-video {
+  box-sizing: border-box;
+  max-width: 50%;
+  display: block;
+  position: relative;
+  margin: 30px 10px 30px 15px;
+  width: 50%;
+  text-align: right;
+}
+
+.profil-video video {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.profil-desk {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.profil-desk p {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  padding: 5px;
+  text-align: justify;
+  color: #edf5e1;
+}
+
+/*Wisata*/
+
+.wisata {
+  padding: 50px 0 50px 0;
+}
+
+.wisata .box-wisata {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  row-gap: 50px;
+}
+
+.wisata .box-wisata .box {
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.wisata .box-wisata .box:hover {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+
+.wisata .box-wisata .box img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.wisata .container h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.wisata .box-wisata .box p {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.wisata .box-wisata .box button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: #dcd7c9;
+  color: #2c3639;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.wisata .box-wisata .box button:hover {
+  background-color: #f6f1f1;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+/*Kontak*/
+.kontak {
+  padding: 50px 0 100px 0;
+}
+
+.kontak .box-kontak {
+  color: white;
+  text-align: center;
+}
+
+.kontak .box-kontak h1 {
+  margin-bottom: 50px;
+}
+
+.kontak .box-kontak h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  animation: animasi;
+  -webkit-animation: animasi 2s infinite;
+}
+@keyframes animasi {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+.kontak .box-kontak button {
+  border: none;
+  min-width: 100px;
+  min-height: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  background-color: #dcd7c9;
+  color: #2c3639;
+  padding-inline: 10px;
+}
+
+.kontak .box-kontak button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2c3639;
+  font-size: 16px;
+  margin-inline: 5px;
+}
+
+.kontak .box-kontak button i {
+  font-size: 16px;
+  font-weight: bold;
+  margin-inline: 5px;
+}
+
+/*Footer*/
+
+.footer {
+  padding: 50px 0 50px 0;
+  background-color: #2c3639;
+}
+
+.footer .box-footer {
+  display: grid;
+  grid-template-columns: 2fr auto 2fr;
+  column-gap: 100px;
+  align-items: center;
+}
+
+.footer .box-footer .box {
+  color: white;
+}
+
+.footer .box-footer .box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footer .box-footer .box:nth-child(2) a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+}
+
+.footer .box-footer .box p {
+  font-weight: 200;
+}
+
+.footer .box-footer .box:nth-child(1) p {
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.footer .box-footer .box:nth-child(3) span {
+  font-weight: bold;
+}
+
+.footer .box-footer .box:nth-child(3) {
+  text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  /*Navbar*/
+
+  .menu-bar {
+    display: block;
+  }
+
+  .navbar .box-navbar .menu {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background-color: #2c3639;
+  }
+
+  .navbar .box-navbar .menu.menu-active {
+    top: 80px;
+    opacity: 1;
+    border-top: 1px solid white;
+  }
+
+  .kontak .box-kontak h1 {
+    font-size: 28px;
+  }
+
+  .footer .box-footer {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Pemerintah wk & wwk*/
+  .profil {
+    flex-wrap: nowrap;
+  }
+
+  .profil-desk {
+    width: 60%;
+  }
+
+  .profil-video {
+    width: 40%;
+  }
+
+  /*Pemerintah wk & wwk*/
+
+  .pemerintah {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .kontak .box-kontak button {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .wisata .box-wisata {
+    grid-template-colums: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
